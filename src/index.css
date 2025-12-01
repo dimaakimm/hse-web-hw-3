@@ -1,0 +1,136 @@
+:root {
+  --bg: #0b0c10;
+  --panel: #12141a;
+  --text: #e8e9ed;
+  --muted: #9aa0a6;
+  --accent: #6aa9ff;
+}
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  background: linear-gradient(180deg, #0b0c10, #0f1117);
+  color: var(--text);
+  font-family: Inter, system-ui, Segoe UI, Roboto, Arial, sans-serif;
+}
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 24px;
+}
+.header {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.tabs {
+  display: flex;
+  gap: 8px;
+}
+.tab {
+  padding: 10px 14px;
+  background: var(--panel);
+  border: 1px solid #1d2230;
+  border-radius: 10px;
+  text-decoration: none;
+  color: var(--text);
+}
+.tab.active {
+  outline: 2px solid var(--accent);
+}
+.title {
+  font-size: 28px;
+  font-weight: 700;
+}
+.panel {
+  background: var(--panel);
+  border: 1px solid #1d2230;
+  border-radius: 14px;
+  padding: 16px;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 12px;
+}
+.card {
+  background: #0f1220;
+  border: 1px solid #1b2134;
+  border-radius: 14px;
+  padding: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.card h3 {
+  margin: 0;
+  font-size: 18px;
+  line-height: 1.2;
+}
+.card p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 14px;
+}
+.card a {
+  color: var(--accent);
+  text-decoration: none;
+  word-break: break-word;
+}
+.search {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 14px;
+}
+.input {
+  flex: 1;
+  padding: 10px 12px;
+  border-radius: 10px;
+  border: 1px solid #222739;
+  background: #0b0e1a;
+  color: var(--text);
+}
+.button {
+  padding: 10px 14px;
+  border-radius: 10px;
+  border: 1px solid #2a3350;
+  background: #16213a;
+  color: var(--text);
+  cursor: pointer;
+}
+.meta {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  color: var(--muted);
+  font-size: 12px;
+}
+.badge {
+  padding: 4px 8px;
+  background: #0c1425;
+  border: 1px solid #1b2134;
+  border-radius: 999px;
+}
+.footer {
+  margin-top: 16px;
+  color: var(--muted);
+  font-size: 12px;
+}
+.loader {
+  display: none;
+  margin: 8px 0;
+}
+.loader.show {
+  display: block;
+}
+.empty {
+  color: var(--muted);
+  padding: 12px;
+}
