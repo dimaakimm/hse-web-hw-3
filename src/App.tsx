@@ -6,7 +6,7 @@ import JobsPage from "./screens/JobsPage/ui/JobsPage.tsx";
 
 const App = () => {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/hse-web-hw-3">
       <Routes>
         <Route path="/" element={<Navigate to="/jobs" replace />} />
         <Route path="/jobs" element={<JobsPage />} />
